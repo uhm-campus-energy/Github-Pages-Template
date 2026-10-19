@@ -1,4 +1,17 @@
-# Water-Test
-Link to the website: https://katehamada.github.io/Water-Test/
+# GitHub Pages Graph Template
 
-Making a water dashboard with GitHub Pages so that it loads faster in comparison to Tableau also just to explore our options when displaying data
+A GitHub Pages (Jekyll) site that turns a CSV file into interactive graphs and tables.
+
+- **Summary** (`index.markdown`): total and top 10 items for a chosen period.
+- **Period Comparison** (`Graphs/comparison.markdown`): monthly lines for several periods, all items combined.
+- **Item Comparison** (`Graphs/item_comp.markdown`): monthly lines for several items in one period.
+- Every graph has a "Download PNG with values" button, and every table has a "Download Excel" button.
+
+## Using the template
+
+1. Put your data in a CSV with the columns `item`, `date` (as `YYYY-M-D`) and `value`. The sample is `data/sample.csv`.
+2. Edit the settings in `_config.yml`: `title`, `baseurl`, `url`, `data_file`, `value_label`, `value_unit` and `start_month`.
+3. Edit `about.markdown` and `_includes/footer.html`.
+4. Preview locally with `bundle exec jekyll serve`, or push to GitHub and enable Pages.
+
+To add a page, copy one in `Graphs/`, then link it from `_includes/quick-links.html`. The shared chart code is in `_includes/chart-common.html`.
