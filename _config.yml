@@ -22,8 +22,8 @@ title: My Graph Site
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   A GitHub Pages template for displaying graphs from a CSV file.
-baseurl: "" # the subpath of your site, e.g. "/my-repo-name" for a project site
-url: "" # the base hostname & protocol for your site, e.g. https://username.github.io
+baseurl: "/Github-Pages-Template" # the subpath of your site: "/<repo-name>" for a project site, "" for a user site
+url: "https://uhm-campus-energy.github.io" # the base hostname & protocol for your site
 
 # Graph settings (see README.md)
 data_file: data/sample.csv   # CSV with columns: item, date (YYYY-M-D), value
